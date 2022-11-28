@@ -1,0 +1,58 @@
+.form {
+	width: 100%;
+	max-width: 1100px;
+	margin: 50px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 50px;
+	margin-top: 90px;
+
+	h2 {
+		margin-bottom: 15px;
+		color: $color_2;
+	}
+
+	p {
+		font-size: 17px;
+		line-height: 1.6;
+		margin-bottom: 30px;
+	}
+
+	input {
+		width: 100%;
+		padding: 15px 18px;
+		font-size: 15px;
+		border: 1px solid black;
+		margin-bottom: 20px;
+		border-radius: 3px;
+		outline: 0px;
+	}
+
+	textarea {
+		width: 100%;
+		height: 100px;
+	}
+}
+
+textarea {
+	width: 100%;
+	padding: 15px 18px;
+	font-size: 15px;
+	border: 1px solid black;
+	margin-bottom: 20px;
+	border-radius: 3px;
+	outline: 0px;
+}
+
+
+.boton {
+	@include boton();
+	border: none;
+	outline: 0px;
+	background-color: $primario;
+	color: $color_1;
+
+	&:hover {
+		background-color: map-get($map: $color, $key:facebook );
+	}
+}
